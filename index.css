@@ -1,21 +1,47 @@
+:root {
+    font-size: calc(0.5em + 1vw);
+    --main-font: Helvetica, Arial, sans-serif;
+    --brand-color: #369;
+}
+
+/* @media (min-width: 800px) {
+    :root {
+        font-size: 0.875em;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        font-size: 1em;
+    }
+} */
 body {
     font-family: sans-serif;
+    margin: 1em;
+    line-height: 1.2;
 }
 
 h1 {
     color: #2f4f4f;
-    margin-bottom: 10px;
+    
 }
+
+p {
+    font-family: var(--main-font, sans-serif);
+    color: var(--brand-color, blue);
+}
+
 .nav {
-    margin-top: 10px;
     list-style: none;
     padding-left: 0;
 }
 .nav li {
     display: inline-block;
+    margin-bottom: 1em;
 }
 
 .nav a {
+    font-size: 0.875rem;
     color: white;
     background-color: #13a4a4;
     padding: 5px 15px;
@@ -44,4 +70,48 @@ a:link {
 .footer a {
     color: inherit;
     text-decoration: underline;
+}
+
+
+
+.box {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: lightgrey;
+}
+
+.box-small {
+    font-size: 12px;
+}
+
+.box-large {
+    font-size: 18px;
+}
+
+.panel {
+    font-size: 1rem;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #999;
+}
+
+.panel .large {
+    font-size: 1.2em;
+}
+
+.panel > h2 {
+    margin-top: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-us {
+    font-size: 2em;
+}
+
+.square {
+    width: 90vmin;
+    height: 90vmin;
+    background-color: #369;
 }
