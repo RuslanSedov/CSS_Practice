@@ -1,0 +1,33 @@
+/* Глобальное исправление свойства border-box */
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Глобальные поля с помощью селектора лоботомированной совы */
+body * + * {
+    margin-top: 1.5em;
+}
+/* Цвета и отступы шапки */
+header {
+    padding: 1em 1.5em;
+    color: #fff;
+    background-color: #0072b0;
+    border-radius: .5em;
+    margin-bottom: 1.5em;
+}
+/* Цвета и отступы основного (белого) контейнера */
+.main {
+    padding: 0 1.5em;
+    background-color: #fff;
+    border-radius: .5em;
+}
