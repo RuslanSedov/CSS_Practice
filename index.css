@@ -1,7 +1,7 @@
 :root {
     font-size: calc(0.5em + 1vw);
-    --main-font: Helvetica, Arial, sans-serif;
-    --brand-color: #369;
+    --main-bg: #fff;
+    --main-color: #000;
 }
 
 /* @media (min-width: 800px) {
@@ -26,10 +26,7 @@ h1 {
     
 }
 
-p {
-    font-family: var(--main-font, sans-serif);
-    color: var(--brand-color, blue);
-}
+
 
 .nav {
     list-style: none;
@@ -93,6 +90,8 @@ a:link {
     padding: 1em;
     border-radius: 0.5em;
     border: 1px solid #999;
+    background-color: var(--main-bg);
+    color: var(--main-color);
 }
 
 .panel .large {
@@ -114,4 +113,13 @@ a:link {
     width: 90vmin;
     height: 90vmin;
     background-color: #369;
+}
+
+.dark {
+    --main-color: #fff;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #999;
+    --main-bg: #333;
+    
 }
