@@ -1,5 +1,6 @@
 :root {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
@@ -14,12 +15,12 @@ body {
 }
 
 body * + * {
-  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .container {
   max-width: 1080px;
-  margin: 0 auto;
+  margin: 0 auto 1.5em auto;
 }
 
 .site-nav {
@@ -76,4 +77,66 @@ body * + * {
 
 .column-sidebar > .tile {
   flex: 1;
+}
+
+/* .column-sidebar > .tile + .tile {
+  margin-top: 1.5em;
+} */
+
+.login-form h3 {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.login-form input:not([type='checkbox']):not([type='radio']) {
+  display: block;
+  margin-top: 0;
+  width: 100%;
+}
+
+.login-form button {
+  margin-top: 1em;
+  border: 1px solid #cc6b5a;
+  background-color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.centered {
+  text-align: center;
+}
+
+.cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.7;
+}
+
+.cost > span {
+  margin-top: 0;
+}
+
+.cost-roubles {
+  font-size: 4rem;
+}
+
+.cost-kopecks {
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+
+.cost-currency {
+  font-size: 2rem;
+}
+
+.cta-button {
+  display: block;
+  background-color: #cc6b5a;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
 }
