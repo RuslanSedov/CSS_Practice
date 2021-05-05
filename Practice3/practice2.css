@@ -28,6 +28,8 @@ header {
 
 [class*='column-'] {
   float: left;
+  padding: 0 0.75em;
+  margin-top: 0;
 }
 
 .column-1 {
@@ -90,9 +92,6 @@ header {
 }
 
 .media {
-  float: left;
-  margin: 0 1.5em 1.5em 0;
-  width: calc(50% - 1.5em);
   padding: 1.5em;
   background-color: #eee;
   border-radius: 0.5em;
@@ -103,8 +102,7 @@ header {
 }
 
 .media-image {
-  width: 128px;
-  height: 128px;
+  width: 80px;
   float: left;
   margin-right: 1.5em;
 }
@@ -116,6 +114,11 @@ header {
 
 .media-body h4 {
   margin-top: 0;
+}
+
+.row {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
 }
 
 .row::after {
