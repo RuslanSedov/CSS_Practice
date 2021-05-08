@@ -48,4 +48,23 @@ button {
 
 .modal-close {
   cursor: pointer;
+  position: absolute;
+  top: 0.3em;
+  right: 0.3em;
+  padding: 0.3em;
+  font-size: 2em;
+  height: 1em;
+  width: 1em;
+  overflow: hidden;
+  border: 0;
+  text-indent: 10em;
+}
+
+.modal-close::after {
+  position: absolute;
+  line-height: 0.5;
+  top: 0.3em;
+  left: 0.1em;
+  text-indent: 0;
+  content: '\00D7';
 }
