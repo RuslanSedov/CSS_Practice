@@ -10,30 +10,31 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="top-banner">
-            <div class="top-banner-inner">
-                <p>Подпишитесь на нашу ежемесячную рассылку новостей из мира кофе. Нажмите кнопку:
-                    <button id="open">Подписаться</button>
-                </p>
-            </div>
-        </header>
-        <div class="modal" id="modal">
-            <div class="modal-backdrop"></div>
-            <div class="modal-body">
-                <button class="modal-close" id="close">закрыть</button>
-                <h2>Кофейные новости</h2>
-                <p>Подпишитесь на нашу ежемесячную рассылку. Никакого спама. Мы гарантируем!</p>
-                <form>
-                    <p>
-                        <label for="#">Адрес email:</label>
-                        <input type="text" name="email">
-                    </p>
-                    <p><button type="submit">Подписаться</button></p>
-                </form>
-            </div>
+
+    <header class="top-banner">
+        <div class="top-banner-inner">
+            <p>Подпишитесь на нашу ежемесячную рассылку новостей из мира кофе. Нажмите кнопку:
+                <button id="open">Подписаться</button>
+            </p>
         </div>
-        <div class="container">
+    </header>
+    <div class="modal" id="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-body">
+            <button class="modal-close" id="close">закрыть</button>
+            <h2>Кофейные новости</h2>
+            <p>Подпишитесь на нашу ежемесячную рассылку. Никакого спама. Мы гарантируем!</p>
+            <form>
+                <p>
+                    <label for="#">Адрес email:</label>
+                    <input type="text" name="email">
+                </p>
+                <p><button type="submit">Подписаться</button></p>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <main class="col-main">
             <nav>
                 <div class="dropdown">
                     <div class="dropdown-label">Меню</div>
@@ -49,7 +50,20 @@
                 </div>
             </nav>
             <h1>Профессиональная техника для обжарщиков</h1>
-        </div>
+        </main>
+
+        <aside class="col-sidebar">
+            <div class="affix">
+                <ul class="submenu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Ростеры</a></li>
+                    <li><a href="#">Кофеварки</a></li>
+                    <li><a href="#">Акции!</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </div>
+        </aside>
+
     </div>
     <script src="position.js"></script>
 </body>
