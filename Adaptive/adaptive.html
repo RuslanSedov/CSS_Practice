@@ -58,6 +58,16 @@
             </section>
         </div>
     </main>
+    <script type="text/javascript">
+        (function () {
+            let button = document.querySelector("#toggle-menu")
+            button.addEventListener("click", event => {
+                event.preventDefault()
+                let menu = document.querySelector("#main-menu")
+                menu.classList.toggle("is-open")
+            })
+        })()
+    </script>
 </body>
 
 </html>
